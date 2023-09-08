@@ -8,6 +8,8 @@ on:
          - opened
 jobs:
    determine-issue:
+      permissions:
+         issues: write
       runs-on: ubuntu-latest
       env:
          AWS_SECRET_ACCESS_KEY: ${{secrets.AWS_SECRET_ACCESS_KEY}}
